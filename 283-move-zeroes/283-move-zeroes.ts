@@ -6,7 +6,8 @@ function moveZeroes(nums: number[]): void {
     for (let i =0; i < nums.length - zeros;) {
         if (nums[i] === 0) {
             zeros++;
-            nums.push(...nums.splice(i,1));
+            nums.splice(i,1)
+            nums.push(0);
         } else {
             i++;
         }
